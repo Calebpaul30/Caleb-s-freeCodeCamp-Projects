@@ -1,0 +1,286 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  a:hover {
+    color: #ff6347;
+  }
+  
+  /* Header Styles */
+  #header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    top: 0;
+  }
+  
+  .logo h1 {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    margin: 0;
+    font-size: 5em;
+  }
+  
+  .logo p {
+    margin: 5px 0 20px;
+    font-style: italic;
+    font-size: 1.2em;
+  }
+  
+  #header-img {
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  
+  /* Navigation Styles */
+  #nav-bar {
+    background-color: #444;
+    padding: 0 0;
+    position: fixed;
+    top: 0;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-list li {
+    margin: 0 15px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: #ff6347;
+  }
+  
+  /* Form Styles */
+  #form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sign-up h2, .sign-up h3 {
+    text-align: center;
+  }
+  
+  .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #email {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  #submit {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: #ff6347;
+  }
+
+  #form-img {
+    margin-left: 15%;
+  }
+  
+  /* Section Styles */
+  .sectionsss {
+    padding: 20px;
+  }
+  
+  section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h3 {
+    margin-top: 0;
+  }
+  
+  iframe {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content p {
+    margin: 0;
+  }
+  
+  .social-media {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-media li {
+    margin: 0 10px;
+    color: #ffffff;
+  }
+  
+  .footer-links {
+    margin: 10px 0;
+  }
+  
+  .footer-links a {
+    color: #ffffff;
+    margin: 0 5px;
+  }
+  
+  .footer-links a:hover {
+    color: #ff6347;
+  }
+  
+  .back-to-top a {
+    color: #ff6347;
+    font-weight: bold;
+    position: fixed;
+    bottom: 5px;
+  }
+  
+  /* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    /* General Styles */
+    body {
+      font-size: 16px;
+    }
+  
+    /* Header Styles */
+    #header {
+      padding: 10px 0;
+    }
+  
+    .logo h1 {
+      font-size: 2em;
+    }
+  
+    .logo p {
+      font-size: 1em;
+    }
+  
+    #header-img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    /* Navigation Styles */
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-list li {
+      margin: 10px 0;
+    }
+  
+    #nav-bar {
+      position: fixed;
+      top: 0;
+    }
+
+    /* Form Styles */
+    #form {
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    .email {
+      flex-direction: column;
+    }
+  
+    #email {
+      margin: 10px 0;
+      width: 100%;
+    }
+  
+    #submit {
+      width: 100%;
+    }
+  
+    /* Section Styles */
+    .sectionsss {
+      padding: 10px;
+    }
+  
+    section {
+      padding: 10px;
+      margin: 10px 0;
+    }
+  
+    iframe {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Footer Styles */
+    .social-media {
+      flex-direction: column;
+    }
+  
+    .social-media li {
+      margin: 5px 0;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+    }
+  
+    .footer-links a {
+      margin: 5px 0;
+    }
+  }

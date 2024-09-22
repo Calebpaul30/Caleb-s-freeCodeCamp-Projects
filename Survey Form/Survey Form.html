@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve our day-to-day operations!</p>
+  <form id="survey-form">
+    <Fieldset>
+      <label id="name-label" for="name">Name<input id="name" type="text" placeholder="Please enter your name" required></label>
+    </fieldset>
+    <fieldset>
+      <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Please enter a valid Email" required></label>
+    </fieldset>
+    <fieldset>
+      <label id="number-label" for="age">Age<input id="number" type="number" min="13" max="99" placeholder="How old are you?" required></label>
+    </fieldset>
+    <fieldset>
+      <p>How happy are you with freeCodeCamp?</p>
+      <select id="dropdown" name="happy">
+
+        <option disabled selected value>Please make selection</option>
+        <option value="Extremely">Extremely</option>
+        <option value="Happy">Happy</option>
+        <option value="Content">Content</option>
+        <option value="Unhappy">Could be better</option>
+        <option value="Disappointed" required>Disappointed</option></select>
+    </fieldset>
+    <fieldset>
+      <p>How likely are you to continue using freeCodeCamp?</p>
+      <input type="radio" value="very likely" name="Likelihood" checked>Very likely
+      <input type="radio" value="maybe" name="Likelihood">Maybe
+      <input type="radio" value="not likely" name="Likelihood">Not likely
+    </fieldset>
+    <fieldset>
+      <p>What was your favorite part of freeCodeCamp? (check all that apply)</p>
+      <input type="checkbox" value="learning" name="favorite">Learning to code
+      <input type="checkbox" value="problemsolving" name="favorite">Solving problems that arise
+      <input type="checkbox" value="killingtime" name="favorite">It gave me something to do so I wasn't bored
+      <input type="checkbox" value="other" name="favorite" />Other
+    </fieldset>
+    <p>Are there any comments or concerns that you'd like to add?</p>
+    <textarea id="comments" name="comments" placeholder="Please enter your comment here..."></textarea>
+    <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+
+</html
